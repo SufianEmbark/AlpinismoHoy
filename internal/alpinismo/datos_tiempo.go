@@ -6,6 +6,7 @@ type DatosTiempo struct {
 	temperaturaMaxima float64
 	temperaturaMinima float64
 	precipitacion     float64
+	viento            float64
 }
 
 type MinimaMayorQueMaximaError struct {
