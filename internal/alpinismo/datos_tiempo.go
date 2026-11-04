@@ -16,3 +16,11 @@ type MinimaMayorQueMaximaError struct {
 func (e *MinimaMayorQueMaximaError) Error() string {
 	return fmt.Sprintf("la temperatura mínima es %v y no puede ser mayor que la máxima, que es %v", e.Minima, e.Maxima)
 }
+
+type PrecipitacionNegativaError struct {
+	Precipitacion float64
+}
+
+func (e *PrecipitacionNegativaError) Error() string {
+	return fmt.Sprintf("la precipitación es %v y no puede ser negativa", e.Precipitacion)
+}
