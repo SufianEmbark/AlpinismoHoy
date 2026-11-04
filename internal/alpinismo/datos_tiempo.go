@@ -25,3 +25,11 @@ type PrecipitacionNegativaError struct {
 func (e *PrecipitacionNegativaError) Error() string {
 	return fmt.Sprintf("la precipitación es %v y no puede ser negativa", e.Precipitacion)
 }
+
+type VientoNegativoError struct {
+	Viento float64
+}
+
+func (e *VientoNegativoError) Error() string {
+	return fmt.Sprintf("el viento es %v y no puede ser negativo", e.Viento)
+}
