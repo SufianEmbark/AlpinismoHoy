@@ -3,6 +3,7 @@ package alpinismo
 import "fmt"
 
 type DatosTiempo struct {
+	temperatura       float64
 	temperaturaMaxima float64
 	temperaturaMinima float64
 	precipitacion     float64
