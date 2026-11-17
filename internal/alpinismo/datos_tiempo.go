@@ -7,6 +7,7 @@ type DatosTiempo struct {
 	temperaturaMaxima float64
 	temperaturaMinima float64
 	precipitacion     float64
+	humedadRelativa   float64
 	viento            float64
 }
 
