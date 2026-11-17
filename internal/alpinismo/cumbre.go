@@ -1,15 +1,12 @@
 package alpinismo
 
-import (
-	"fmt"
-	"time"
-)
+import "fmt"
 
 type Cumbre struct {
 	altitud                float64
 	estaciones             map[string]Estacion
 	datosTiempo            map[string]map[Hora]DatosTiempo
-	coberturaNieveSatelite map[time.Time]float64
+	coberturaNieveSatelite map[Dia]float64
 }
 
 type CoberturaNieveFueraDeRangoError struct {
