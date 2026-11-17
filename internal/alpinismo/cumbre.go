@@ -8,7 +8,7 @@ import (
 type Cumbre struct {
 	altitud                float64
 	estaciones             map[string]Estacion
-	datosTiempo            map[time.Time]map[string]DatosTiempo
+	datosTiempo            map[string]map[Hora]DatosTiempo
 	coberturaNieveSatelite map[time.Time]float64
 }
 
